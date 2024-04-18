@@ -1,2 +1,4 @@
-.config/vscode-sqltools/
-.config/JetBrains/
+*
+.config
+.tmux.conf
+.gitignore
