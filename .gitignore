@@ -1,4 +1,6 @@
 *
-.config
-.tmux.conf
-.gitignore
+!.config
+!.config/nvim/
+!.config/nvim/**/*
+!.tmux.conf
+!.gitignore
