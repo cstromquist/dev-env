@@ -6,4 +6,14 @@ return {
 		-- your config goes here
 		-- or just leave it empty :)
 	},
+	config = function()
+		local auto_save = require("auto-save")
+		auto_save.setup({
+			condition = function(buf)
+				if vim.bo[buf].filetype == "harpoon" then
+					return false
+				end
+			end,
+		})
+	end,
 }
