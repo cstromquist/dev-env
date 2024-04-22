@@ -13,6 +13,7 @@ return {
 				if vim.bo[buf].filetype == "harpoon" then
 					return false
 				end
+				return true
 			end,
 		})
 	end,
