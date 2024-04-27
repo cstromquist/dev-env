@@ -17,8 +17,8 @@ keymap.set("n", "<S-l>", ":bnext<CR>", { desc = "Buffer previous" })
 keymap.set("n", "<S-h>", ":bprevious<CR>", { desc = "Buffer next" })
 
 -- page up/down
-keymap.set("n", "<C-j>", "<C-U>", { desc = "Page up" }) --  move current buffer to new tab
-keymap.set("n", "<C-k>", "<C-D>", { desc = "Page down" }) --  move current buffer to new tab
+keymap.set("n", "<M-j>", "<C-u>", { desc = "Page up" }) --  move current buffer to new tab
+keymap.set("n", "<M-k>", "<C-d>", { desc = "Page down" }) --  move current buffer to new tab
 
 -- delete single character without copying into register
 -- keymap.set("n", "x", '"_x')
@@ -38,6 +38,8 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+keymap.set("n", "<leader>p", '"_dP', { desc = "Paste text but keep in register" })
 
 for i = 1, 6 do
 	local lhs = "<leader>" .. i
