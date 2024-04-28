@@ -1,5 +1,35 @@
 -- set leader key to space
 vim.g.mapleader = " "
+vim.opt.guicursor = ""
+
+vim.opt.wrap = false
+
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undofile = true
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undo"
+
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
+
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
+
+vim.keymap.set("n", "J", "mzJ`z", { desc = "Join line below with current line" })
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down and keep cursor in middle" })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up and keep cursor in middle" })
+vim.keymap.set("n", "n", "nzzzv", { desc = "Move to next search result and center" })
+vim.keymap.set("n", "N", "Nzzzv", { desc = "Move to previous search result and center" })
+
+vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste text but keep in register" })
+
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Copy to clipboard" })
+vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy" })
+
+vim.keymap.set("i", "<C-c>", "<Esc>")
+
+vim.keymap.set("n", "Q", "<nop>")
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 local keymap = vim.keymap -- for conciseness
 
