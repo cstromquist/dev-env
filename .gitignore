@@ -4,3 +4,4 @@
 !.config/nvim/**/*
 !.tmux.conf
 !.gitignore
+!.zshrc
