@@ -29,10 +29,10 @@ return {
 		end, { desc = "Select 4" })
 
 		-- toggle previous & next buffers stored within harpoon list
-		keymap.set("n", "<M-5>", function()
+		keymap.set("n", "<M-h>", function()
 			harpoon:list():prev()
 		end, { desc = "" })
-		keymap.set("n", "<M-6>", function()
+		keymap.set("n", "<M-l>", function()
 			harpoon:list():next()
 		end, { desc = "" })
 	end,
