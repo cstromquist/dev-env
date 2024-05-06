@@ -105,18 +105,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cdehr="cd ~/Workspace/ccsrc/ehr"
-alias vi="nvim"
-alias p8="ssh pdgdev08"
 
 # Git list local branches
 # alias gls='git branch --sort=-committerdate | fzf --header Checkout | xargs git checkout'
 # Git list 10 most recent braches
 
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-source /Users/chriss/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Add username and hostname to prompt
 # export PROMPT='%(!.%{%F{yellow}%}.)$USER@%{$fg[white]%}%M ${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
@@ -128,6 +121,10 @@ autoload -Uz compinit && compinit
 
 if [ -f ~/.bashrc.chriss ]; then 
     . ~/.bashrc.chriss;
+fi
+
+if [ -f ~/.bashrc.mac ]; then 
+    . ~/.bashrc.mac;
 fi
 
 export LC_ALL=en_US.UTF-8
