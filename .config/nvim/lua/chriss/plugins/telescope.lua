@@ -62,7 +62,7 @@ return {
 		end, { desc = "Pretty workspace symbols" })
 
 		vim.keymap.set("n", "<leader>fs", function()
-			pickers.prettyGrepPicker({ picker = "live_grep" })
+			pickers.prettyGrepPicker({ picker = "live_grep_args" })
 		end, { desc = "Find string in cwd" })
 
 		vim.keymap.set("n", "<leader>fc", function()

@@ -258,6 +258,8 @@ function telescopePickers.prettyGrepPicker(pickerAndOptions)
 	-- Finally, check which file picker was requested and open it with its associated options
 	if pickerAndOptions.picker == "live_grep" then
 		require("telescope.builtin").live_grep(options)
+	elseif pickerAndOptions.picker == "live_grep_args" then
+		require("telescope").extensions.live_grep_args.live_grep_args()
 	elseif pickerAndOptions.picker == "grep_string" then
 		require("telescope.builtin").grep_string(options)
 	elseif pickerAndOptions.picker == "" then
