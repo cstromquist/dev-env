@@ -31,6 +31,9 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
+-- add a new line without entering insert mode
+vim.keymap.set("n", "<leader>o", "o<Esc>k", { desc = "Add a new line below" })
+
 local keymap = vim.keymap -- for conciseness
 
 ---------------------
