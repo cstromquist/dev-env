@@ -129,3 +129,5 @@ if [ -f ~/.bashrc.mac ]; then
 fi
 
 export LC_ALL=en_US.UTF-8
+
+eval "$(zoxide init --cmd cd zsh)"
