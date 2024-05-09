@@ -37,8 +37,9 @@ return {
 
 			map("n", "<leader>bd", gs.diffthis, "Diff this")
 			map("n", "<leader>bD", function()
-				gs.diffthis("~")
-			end, "Diff this ~")
+        vim.cmd("wincmd p")
+        vim.cmd("q")
+			end, "Close diff view")
 
 			-- Text object
 			map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", "Gitsigns select hunk")
