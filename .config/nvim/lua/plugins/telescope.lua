@@ -46,7 +46,7 @@ return {
 	config = function()
 		local telescope = require("telescope")
 		local actions = require("telescope.actions")
-		local pickers = require("chriss.telescopePickers")
+		local pickers = require("telescopePickers")
 
 		-- set keymaps
 		vim.keymap.set("n", "<leader>fd", function()
