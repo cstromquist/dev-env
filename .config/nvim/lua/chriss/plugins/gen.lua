@@ -1,7 +1,7 @@
 return {
 	"David-Kunz/gen.nvim",
 	config = function()
-		vim.keymap.set({ "n", "v" }, "<leader>gg", ":Gen<CR>")
+		vim.keymap.set({ "n", "v" }, "<leader>ggm", ":Gen<CR>")
 		vim.keymap.set({ "n", "v" }, "<leader>ggc", ":Gen Chat<CR>")
 		vim.keymap.set({ "n", "v" }, "<leader>ggs", ":Gen Summarize<CR>")
     vim.keymap.set({ "n", "v" }, "<leader>gga", ":Gen Ask<CR>")
