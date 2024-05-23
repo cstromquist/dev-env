@@ -2,6 +2,13 @@ return {
 	"David-Kunz/gen.nvim",
 	config = function()
 		vim.keymap.set({ "n", "v" }, "<leader>gg", ":Gen<CR>")
+		vim.keymap.set({ "n", "v" }, "<leader>ggc", ":Gen Chat<CR>")
+		vim.keymap.set({ "n", "v" }, "<leader>ggs", ":Gen Summarize<CR>")
+    vim.keymap.set({ "n", "v" }, "<leader>gga", ":Gen Ask<CR>")
+		vim.keymap.set({ "n", "v" }, "<leader>ggr", ":Gen Review_Code<CR>")
+		vim.keymap.set({ "n", "v" }, "<leader>gge", ":Gen Enhance_Code<CR>")
+		vim.keymap.set({ "n", "v" }, "<leader>ggcc", ":Gen Change_Code<CR>")
+
 		require("gen").setup({
 			model = "llama3:latest", -- The default model to use.
 			host = "localhost", -- The host running the Ollama service.
