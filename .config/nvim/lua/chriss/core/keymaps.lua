@@ -49,9 +49,9 @@ keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "<S-l>", ":bnext<CR>", { desc = "Buffer previous" })
 keymap.set("n", "<S-h>", ":bprevious<CR>", { desc = "Buffer next" })
 
--- page up/down
-keymap.set("n", "<M-k>", "<C-u>zz", { desc = "Page up" }) --  move current buffer to new tab
-keymap.set("n", "<M-j>", "<C-d>zz", { desc = "Page down" }) --  move current buffer to new tab
+-- page up/down - not sure I like this so commenting out for now
+-- keymap.set("n", "<M-k>", "<C-u>zz", { desc = "Page up" }) --  move current buffer to new tab
+-- keymap.set("n", "<M-j>", "<C-d>zz", { desc = "Page down" }) --  move current buffer to new tab
 
 -- delete single character without copying into register
 -- keymap.set("n", "x", '"_x')
